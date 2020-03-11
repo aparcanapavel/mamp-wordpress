@@ -5,7 +5,7 @@
 - HTML
 - CSS
 
-### Other Details 
+### Overview
 Within the last two days, I have been re-learning how to work with wordpress. While at Rutgers University, we were tasked to make a porfolio website using WordPress. At the time, I did not have any web development experience and neither did my classmates, so we were encouraged to use templates already made by WordPress developers.
 
 Fastforward to today, I have gained knowledge of full stack web development and have aquired many skills and technologies. As I was learning the developer version of WordPress, I have realized that it is much more engaging than I previously thought WordPress to be. Being able to write HTML and CSS code to create my own themes rather than being limitted to premade themes has changed my whole perspective of WordPress. Further, as I was learning PHP for the MAMP stack, I have realized that it is similar to Rails erb tags, where one is able to write inline conditionals and loops to render the desided components. I am looking forward to finishing this project and relaunch my first web design project, with a different stack.
