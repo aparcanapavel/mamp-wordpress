@@ -63,20 +63,18 @@ get_header();
               </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum non nihil voluptas soluta doloremque odio, eius ipsa deserunt!</p>
             </div> -->
-            <?php
-            /* Start the Loop */
-            while ( have_posts() ) :
-              the_post();
-
-              /*
-              * Include the Post-Type-specific template for the content.
-              * If you want to override this in a child theme, then include a file
-              * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-              */
-              get_template_part( 'template-parts/content', get_post_type() );
-
-            endwhile;
-            ?>
+            <?php /* Start the Loop */ ?>
+            
+            <?php $eventQuery = new WP_Query('category_name=events&posts_per_page=2'); ?>
+            <?php while ( $eventQuery->have_posts() ) : $eventQuery->the_post(); ?>
+              <div class="event-cont">
+                <div class="date-separator">
+                  <p><?php echo get_post_meta($post->ID, 'date', true); ?></p>
+                  <div></div>
+                </div>
+                <p><?php echo get_post_meta($post->ID, 'details', true); ?></p>
+              </div>
+            <?php endwhile; ?>
           </div>
           </div>
       </section>
