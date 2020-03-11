@@ -682,11 +682,18 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin: 0px 10px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: black;
+	transition: color 0.3s;
+}
+
+.main-navigation a:hover{
+	color: rgb(121, 0, 201);
 }
 
 /* Small menu. */
@@ -1222,4 +1229,63 @@ div.date-separator div {
 
 div.event-cont > p{
 	padding-left: 50px;
+}
+
+/* ----------------------------- contact ----------------------------- */
+div.contact-container{
+	width: 100%;
+	background-color: rgba(0,0,0,.1);
+	position: relative;
+}
+
+main.contact-wrapper{
+	max-width: 960px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+div.go-to-contact{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+div.contact-src{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+div.contact-src img{
+	width: 150px;
+	height: 200px;
+	background-color: gray;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid rgba(121, 0, 201, 0.5);
+}
+
+div.contact-src figcaption{
+	position: relative;
+	text-align: center;
+}
+
+main.contact-wrapper h3{
+	text-align: center;
+}
+
+div.location{
+	margin: 0 auto;
+	position: relative;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+div.location iframe {
+	width: 100%;
 }
