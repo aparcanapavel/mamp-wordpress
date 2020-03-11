@@ -14,6 +14,23 @@ Within the last two days, I have been re-learning how to work with wordpress. Wh
 
 Fastforward to today, I have gained knowledge of full stack web development and have aquired many skills and technologies. As I was learning the developer version of WordPress, I have realized that it is much more engaging than I previously thought WordPress to be. Being able to write HTML and CSS code to create my own themes rather than being limitted to premade themes has changed my whole perspective of WordPress. Further, as I was learning PHP for the MAMP stack, I have realized that it is similar to Rails erb tags, where one is able to write inline conditionals and loops to render the desided components. I am looking forward to finishing this project and relaunch my first web design project, with a different stack.
 
+In order to make the upcomming events on the home page dynamic, I had ot use a PHP custom query, with a while loop. The loop helped the code stay DRY instead of hard coding it to the home page.
+
+```php 
+<?php /* Start the Loop */ ?>
+            
+            <?php $eventQuery = new WP_Query('category_name=events&posts_per_page=2'); ?>
+            <?php while ( $eventQuery->have_posts() ) : $eventQuery->the_post(); ?>
+              <div class="event-cont">
+                <div class="date-separator">
+                  <p><?php echo get_post_meta($post->ID, 'date', true); ?></p>
+                  <div></div>
+                </div>
+                <p><?php echo get_post_meta($post->ID, 'details', true); ?></p>
+              </div>
+            <?php endwhile; ?>
+```
+
 #### MVP
 **Day One**
 - Read WordPress documentation
@@ -28,7 +45,7 @@ Fastforward to today, I have gained knowledge of full stack web development and 
 
 
 ##### TO DO 
-- Make upcomming events ***dynamic***.
+- Make upcomming events ***dynamic*** (finished)
 - Contact organization for updated contact information.
 - Make website ***responsive*** and mobile friendly.
 
