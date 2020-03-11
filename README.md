@@ -15,6 +15,7 @@ Fastforward to today, I have gained knowledge of full stack web development and 
 - Read WordPress documentation
 - Choose stack to run locally
 - Install WordPress Locally
+
 **Day Two**
 - Understand WordPress Flow Chart
 - Initiate GitHub Repository
