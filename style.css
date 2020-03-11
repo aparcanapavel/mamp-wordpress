@@ -1135,6 +1135,7 @@ div.banner{
 
 div.banner img{
 	width: 100%;
+	margin-top: -70px;
 }
 
 /* ---------------------- main section ----------------------- */
