@@ -7,6 +7,8 @@
 
 ![Home-page](https://github.com/aparcanapavel/mamp-wordpress/blob/master/assets/home_page_theme.png?raw=true)
 
+![Contact-page](https://github.com/aparcanapavel/mamp-wordpress/blob/master/assets/contact_page_theme.png?raw=true)
+
 ### Overview
 Within the last two days, I have been re-learning how to work with wordpress. While at Rutgers University, we were tasked to make a porfolio website using WordPress. At the time, I did not have any web development experience and neither did my classmates, so we were encouraged to use templates already made by WordPress developers.
 
