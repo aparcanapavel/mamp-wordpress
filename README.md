@@ -22,7 +22,13 @@ Fastforward to today, I have gained knowledge of full stack web development and 
 - Understand WordPress Flow Chart
 - Initiate GitHub Repository
 - Write Home Page Theme
-- Write Contact Theme
+- Write Contact 
+
+
+##### TO DO 
+- Make upcomming events ***dynamic***.
+- Contact organization for updated contact information.
+- Make website ***responsive*** and mobile friendly.
 
 
 # WordPress default readme #
