@@ -49,7 +49,7 @@ get_header();
           <!-- use php loop to get events -->
           <div class="event-wrapper">
             <h2>Upcomming Events</h2>
-            <div class="event-cont">
+            <!-- <div class="event-cont">
               <div class="date-separator">
                 <p>March Nth, 2020</p>
                 <div></div>
@@ -62,7 +62,21 @@ get_header();
                 <div></div>
               </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum non nihil voluptas soluta doloremque odio, eius ipsa deserunt!</p>
-            </div>
+            </div> -->
+            <?php
+            /* Start the Loop */
+            while ( have_posts() ) :
+              the_post();
+
+              /*
+              * Include the Post-Type-specific template for the content.
+              * If you want to override this in a child theme, then include a file
+              * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+              */
+              get_template_part( 'template-parts/content', get_post_type() );
+
+            endwhile;
+            ?>
           </div>
           </div>
       </section>
