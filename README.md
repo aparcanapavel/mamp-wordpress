@@ -1,4 +1,4 @@
-## Project APD-DB##
+## Project APD-DB ##
 ### technologies used
 - MAMP (Mac OSX, Apache, MySQL, PHP)
 - WordPress
